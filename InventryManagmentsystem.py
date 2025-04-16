@@ -4,6 +4,9 @@ class Product:
         self.product_id = product_id
         self.price = price
         self.quantity = quantity
+        self. category=category
+        self. manufacturer =manufacturer
+        
 
     def add_stock(self, quantity):
         self.quantity += quantity
@@ -61,9 +64,9 @@ class Sales:
 inventory = Inventory()
 
 # Adding products
-p1 = Product("Laptop", 101, 800, 10)
-p2 = Product("Phone", 102, 500, 20)
-p3=Product("Androied",233,30000,10)
+p1 = Product("Laptop", 101, 800, 10,'Electronics',"Hp")
+p2 = Product("Phone", 102, 500, 20,"Electronicss","Android")
+p3=Product("Androied",233,30000,10,"Electronics ",'Android')
 
 inventory.add_product(p1)
 inventory.add_product(p2)
